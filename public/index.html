@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CodeAlpha Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🛒 CodeAlpha Store</h1>
+    <div>
+      <span id="user-info"></span>
+      <button onclick="openAuth()">Login / Register</button>
+      <button onclick="openCart()">Cart (<span id="cart-count">0</span>)</button>
+    </div>
+  </header>
+
+  <main id="products" class="grid"></main>
+
+  <!-- Cart modal -->
+  <div id="cart-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <p>Total: $<span id="cart-total">0.00</span></p>
+      <button onclick="checkout()">Checkout</button>
+      <button onclick="closeModals()">Close</button>
+    </div>
+  </div>
+
+  <!-- Auth modal -->
+  <div id="auth-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="auth-title">Login</h2>
+      <input id="auth-name" placeholder="Name (register only)" />
+      <input id="auth-email" placeholder="Email" />
+      <input id="auth-password" type="password" placeholder="Password" />
+      <button onclick="submitAuth()">Submit</button>
+      <button onclick="toggleAuthMode()">Switch to Register</button>
+      <button onclick="closeModals()">Close</button>
+      <p id="auth-msg"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
