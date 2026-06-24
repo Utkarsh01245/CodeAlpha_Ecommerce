@@ -71,8 +71,6 @@ CodeAlpha_Ecommerce/
 └── README.md
 
 
----
-
 ## 🔑 Usage
 1. Register/Login as a user.
 2. Browse products and add them to your cart.
@@ -91,17 +89,5 @@ CodeAlpha_Ecommerce/
 - **Orders**
   - `POST /api/orders` → Place new order
   - `GET /api/orders/:userId` → Get user’s orders
-
----
-
-## 📸 Demo
-- Video explanation uploaded on LinkedIn with GitHub repo link (as per internship instructions).
-
----
-
-## 📝 Internship Notes
-- Repository name: `CodeAlpha_Ecommerce`
-- Submission via official CodeAlpha form.
-- Certificate eligibility requires completion of 2–3 tasks.
 
 '''
